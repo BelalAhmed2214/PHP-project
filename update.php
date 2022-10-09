@@ -9,7 +9,7 @@ if (!empty($_POST['Username']))
     $updatequery="UPDATE `student` SET `name` = '$name' , `email`='$email' WHERE `id` = $id";
     mysqli_query($connection,$updatequery);
     if(mysqli_affected_rows($connection))
-        echo "True";
+        echo "Your Information have been Updated at the Database";
     else
         echo "Failed";
 }

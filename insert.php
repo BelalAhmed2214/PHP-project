@@ -8,7 +8,7 @@ if (!empty($_POST['Username']))
     $insertquery="INSERT INTO `student`(`name`,`password`,`email`) VALUES('$name','$password','$email')";
     mysqli_query($connection,$insertquery);
     if(mysqli_affected_rows($connection))
-        echo "True";
+        echo "Your Information have been Added to Database";
     else
         echo "Failed";
 }

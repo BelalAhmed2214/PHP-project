@@ -9,7 +9,7 @@ if (!empty($_POST['Username']))
     $deletequery="DELETE FROM `student` WHERE `id` = '$id' AND `name`='$name' AND `email`='$email' ";
     mysqli_query($connection,$deletequery);
     if(mysqli_affected_rows($connection))
-        echo "True";
+        echo "Your Information have been deleted from Database";
     else
         echo "Failed";
 }
